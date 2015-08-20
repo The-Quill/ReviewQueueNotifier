@@ -2,7 +2,7 @@
 // @name         Review Queue Notification
 // @namespace    https://github.com/malachi26/SE-Scripts
 // @version      2.0
-// @description  Shows a desktop notification when there review items in the queue without opening the review queue page.
+// @description  Shows a desktop notification when review items appear in the queue.
 // @author       Malachi
 // @grant GM_getValue
 // @grant GM_setValue
