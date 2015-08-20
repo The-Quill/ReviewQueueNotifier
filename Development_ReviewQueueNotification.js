@@ -9,12 +9,18 @@
 // @grant GM_notification
 // @match http*
 // ==/UserScript==
-	var sites = ["http://codereview.stackexchange.com", "http://stackoverflow.com"];
+
+	var SITES = [
+		  "http://codereview.stackexchange.com"
+		, "http://stackoverflow.com"
+		];
+
     var DELAY = 30 * 1000; //30,000 milliseconds
+
     setTimeout(function(){
-		for (var i = 0; i < sites.length; i++) {
-			CountReviews(sites[i] + '/review');
-		}
+		SITES.forEach(function(item){
+			CountReviews(item + '/review');
+		});
     }, DELAY);
 
 	function CountReviews(siteUrl) {
